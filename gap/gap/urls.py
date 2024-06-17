@@ -23,7 +23,7 @@ movie_resource = MovieResource()
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.index, name='index'),
+    path('', views.home, name='home'),
     path('movies/', include('movies.urls')),
     path('api/', include(movie_resource.urls)),
     path("__debug__/", include("debug_toolbar.urls")),
